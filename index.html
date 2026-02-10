@@ -344,8 +344,31 @@
     });
 </script>
 
+
+
+<script>
+function abrirInstagram(e) {
+  e.preventDefault();
+
+  const user = "dolfisabores";
+  const isAndroid = /Android/i.test(navigator.userAgent);
+
+  if (isAndroid) {
+    window.location.href =
+      "intent://instagram.com/" + user +
+      "#Intent;package=com.instagram.android;scheme=https;end";
+  } else {
+    window.open("https://www.instagram.com/" + user + "/", "_blank");
+  }
+}
+</script>
+
+
+    
+
 </body>
 </html>
+
 
 
 
