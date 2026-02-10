@@ -289,10 +289,19 @@
   
     <div class="redes-sociales">
     
-<a href="https://www.instagram.com/_u/dolfisabores" target="_blank" rel="noopener noreferrer" class="red">
+<a href="#" onclick="openInstagram()" class="red">
   <img src="IMAGENES/insatadolfi.png" alt="Instagram">
 </a>
 
+<script>
+function openInstagram() {
+  if (/Android/i.test(navigator.userAgent)) {
+    window.location.href = "https://www.instagram.com/_u/dolfisabores";
+  } else {
+    window.open("https://www.instagram.com/dolfisabores/", "_blank");
+  }
+}
+</script>
 
 
 
@@ -344,6 +353,7 @@
 
 </body>
 </html>
+
 
 
 
